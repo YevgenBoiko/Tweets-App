@@ -33,6 +33,7 @@ export const UserCard = ({
       onFollowClick(id);
     }
   };
+
   return (
     <Card>
       <div>
@@ -43,8 +44,10 @@ export const UserCard = ({
         <Avatar src={avatar} alt="avatar" />
       </div>
       <Info>
-        <UserTweets>{tweets} Tweets</UserTweets>
-        <UserFollowers>{followersQty} Followers</UserFollowers>
+        <UserTweets>{tweets.toLocaleString('en-US')} Tweets</UserTweets>
+        <UserFollowers>
+          {followersQty.toLocaleString('en-US')} Followers
+        </UserFollowers>
 
         {following.filter(user => user.id === id).length > 0 ? (
           <ButtonFollowing onClick={() => handleButton(id)}>

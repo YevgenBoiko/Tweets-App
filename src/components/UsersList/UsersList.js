@@ -1,6 +1,4 @@
 import { UserCard } from 'components/UserCard/UserCard';
-// import { Link } from 'react-router-dom';
-
 import {
   BackBtn,
   Box,
@@ -9,8 +7,6 @@ import {
   Section,
   Selector,
 } from './UsersList.styled';
-
-// import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import { useEffect, useState } from 'react';
 import { fetchAll } from 'services/users-api';
@@ -38,8 +34,8 @@ export const UsersList = ({
       case 'show all':
         setSelectedUsers(users);
         setIsActiveButton(true);
-
         break;
+
       case 'follow':
         fetchAll()
           .then(usersList => {
@@ -49,12 +45,13 @@ export const UsersList = ({
             );
           })
           .finally(() => setIsActiveButton(false));
-
         break;
+
       case 'followings':
         setSelectedUsers(following);
         setIsActiveButton(false);
         break;
+
       default:
         break;
     }
@@ -82,7 +79,6 @@ export const UsersList = ({
         ))}
       </List>
 
-      {/* <Button onClick={onLoadClick}>Load more</Button> */}
       {isActiveButton &&
         selectedUsers.length >= 3 &&
         selectedUsers.length < 21 && (

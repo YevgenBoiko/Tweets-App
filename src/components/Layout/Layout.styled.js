@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Header = styled.header`
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 1000;
   background: linear-gradient(
     114.99deg,
     #471ca9 -0.99%,

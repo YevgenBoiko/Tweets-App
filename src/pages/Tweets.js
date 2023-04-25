@@ -39,6 +39,7 @@ const Tweets = () => {
 
   const onFollowClick = id => {
     let user = {};
+
     if (users.filter(user => user.id === id)[0]) {
       user = users.filter(user => user.id === id)[0];
     } else {
