@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/Tweets-App/static/css/main.d181871f.css",
-    "main.js": "/Tweets-App/static/js/main.6acd7480.js",
+    "main.js": "/Tweets-App/static/js/main.0312c85d.js",
     "static/js/145.73aa6e83.chunk.js": "/Tweets-App/static/js/145.73aa6e83.chunk.js",
     "static/css/130.cfce8fa4.chunk.css": "/Tweets-App/static/css/130.cfce8fa4.chunk.css",
-    "static/js/130.b160b6e6.chunk.js": "/Tweets-App/static/js/130.b160b6e6.chunk.js",
+    "static/js/130.159ec4af.chunk.js": "/Tweets-App/static/js/130.159ec4af.chunk.js",
     "static/js/279.84f46a15.chunk.js": "/Tweets-App/static/js/279.84f46a15.chunk.js",
     "static/media/Logo.jpg": "/Tweets-App/static/media/Logo.b10abd05da2025bfc3f8.jpg",
     "static/media/picture.png": "/Tweets-App/static/media/picture.032662a2a907475127d7.png",
     "index.html": "/Tweets-App/index.html",
     "main.d181871f.css.map": "/Tweets-App/static/css/main.d181871f.css.map",
-    "main.6acd7480.js.map": "/Tweets-App/static/js/main.6acd7480.js.map",
+    "main.0312c85d.js.map": "/Tweets-App/static/js/main.0312c85d.js.map",
     "145.73aa6e83.chunk.js.map": "/Tweets-App/static/js/145.73aa6e83.chunk.js.map",
     "130.cfce8fa4.chunk.css.map": "/Tweets-App/static/css/130.cfce8fa4.chunk.css.map",
-    "130.b160b6e6.chunk.js.map": "/Tweets-App/static/js/130.b160b6e6.chunk.js.map",
+    "130.159ec4af.chunk.js.map": "/Tweets-App/static/js/130.159ec4af.chunk.js.map",
     "279.84f46a15.chunk.js.map": "/Tweets-App/static/js/279.84f46a15.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d181871f.css",
-    "static/js/main.6acd7480.js"
+    "static/js/main.0312c85d.js"
   ]
 }
