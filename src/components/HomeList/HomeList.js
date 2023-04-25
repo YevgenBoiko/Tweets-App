@@ -1,4 +1,5 @@
 import { Avatar, Item, List, Text, Title } from './HomeList.styled';
+import PropTypes from 'prop-types';
 
 export const HomeList = ({ usersList }) => {
   return (
@@ -15,4 +16,14 @@ export const HomeList = ({ usersList }) => {
       </List>
     </>
   );
+};
+
+HomeList.propTypes = {
+  usersList: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      user: PropTypes.string,
+      avatar: PropTypes.string,
+    })
+  ),
 };

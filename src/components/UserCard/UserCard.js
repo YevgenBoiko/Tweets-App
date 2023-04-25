@@ -1,5 +1,6 @@
 import logo from 'images/Logo.png';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import {
   Avatar,
   BgPicture,
@@ -59,4 +60,15 @@ export const UserCard = ({
       </Info>
     </Card>
   );
+};
+
+UserCard.propTypes = {
+  userData: PropTypes.shape({
+    id: PropTypes.string,
+    tweets: PropTypes.number,
+    followers: PropTypes.number,
+    avatar: PropTypes.string,
+  }),
+  following: PropTypes.array,
+  onFollowClick: PropTypes.func,
 };

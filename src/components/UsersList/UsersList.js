@@ -11,6 +11,7 @@ import 'react-dropdown/style.css';
 import { useEffect, useState } from 'react';
 import { fetchAll } from 'services/users-api';
 import { Loader } from 'components/Loader/Loader';
+import PropTypes from 'prop-types';
 
 export const UsersList = ({
   onLoadClick,
@@ -88,4 +89,18 @@ export const UsersList = ({
         )}
     </Section>
   );
+};
+
+UsersList.propTypes = {
+  users: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      user: PropTypes.string,
+      avatar: PropTypes.string,
+    })
+  ),
+  onLoadClick: PropTypes.func,
+  following: PropTypes.array,
+  isLoading: PropTypes.bool,
+  onClick: PropTypes.func,
 };
