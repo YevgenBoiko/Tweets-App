@@ -23,6 +23,8 @@ export const BackBtn = styled(Link)`
   background: #ebd8ff;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  height: 36px;
+  box-sizing: border-box;
 
   padding: 7px 28px;
   margin: 0;
